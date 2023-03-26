@@ -163,7 +163,7 @@ body {
   /* backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px); */
   background: rgba(233, 233, 233, 0.25);
-  
+  /* overflow: hidden; */
 }
 
 .wrapper::before {
@@ -201,8 +201,8 @@ body {
   content: "";
   position: absolute;
 
-  top: 1px;
-  left: 1px;
+  top: -1px;
+  left: 0px;
   width: 170px;
   height: 36px;
   background: rgba(21, 52, 22, 1);
@@ -243,13 +243,17 @@ body {
 
 /* ______________________________________________Email________________________________________________________ */
 
-
 .Email {
-padding: 29px 78px 15px;
+  padding: 29px 78px 29px;
 }
 
+.form-group {
+  position: relative;
 
-.card-email {
+}
+
+.form-input {
+  width: 100%;
   position: relative;
   margin-bottom: 15px;
   display: flex;
@@ -260,35 +264,31 @@ padding: 29px 78px 15px;
   border-radius: 100px;
   background: #929191;
   color: #ffffff;
-}
-
-.card-email input {
-  position: absolute;
-  top: 0;
-  z-index: -1;
   
 }
 
-.card-email label {
-  width: 100%;
+.form-label {
+  position: absolute;
+  top: 0; 
+  margin-top: 15px;
   font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-margin-left: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 20px;
+  color: #ffffff;
 }
+
 
 .remember {
   display: flex;
   justify-content: space-between;
   padding: 21px 78px 30px 78px;
-  
 }
 
-
 .remember label {
- padding: left 10px;
-  color: #FFFFFF;
+  padding: left 10px;
+  color: #ffffff;
   font-size: 12px;
 }
 
@@ -299,6 +299,12 @@ margin-left: 20px;
 
 .button {
   position: relative;
+ 
+}
+
+
+.button1 {
+  position: absolute;
   margin-bottom: 15px;
   display: flex;
   justify-content: center;
@@ -307,33 +313,51 @@ margin-left: 20px;
   height: 44px;
   border-radius: 100px;
   background: #153416;
-  color: #FFFFFF;
-  padding: 30px 78px 40px 78px; 
- 
+  color: #ffffff;
+   margin: 30px 78px 40px 78px; 
 }
 
 .accaunt {
   display: flex;
- justify-content: center;
+  justify-content: center;
   padding: 40px 123px 30px 136px;
 }
 
 .accaunt p {
   font-size: 12px;
-line-height: 14px;
-color: #153416;
+  line-height: 14px;
+  color: #153416;
 }
 
 .accaunt a {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 12px;
-line-height: 14px;
+  line-height: 14px;
 }
 
 .oro {
-  
   text-align: center;
   font-size: 12px;
-line-height: 14px;
-color: #153416;
+  line-height: 14px;
+  color: #153416;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.icons svg {
+  
+  width: 24px;
+  height: 24px;
+  fill: #153416;;
+}
+
+.icon-inst {
+  width: 24px;
+  height: 24px;
 }

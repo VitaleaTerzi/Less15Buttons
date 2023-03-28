@@ -137,7 +137,7 @@ table {
 }
 
 .clearfix::after {
-  content: "";
+  content:'';
   clear: both;
   display: block;
 }
@@ -172,7 +172,7 @@ body {
 }
 
 .wrapper::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -286,6 +286,10 @@ body {
   border: none;
 }
 
+.form-group .form-input {
+  color: black;
+}
+
 .form-input::placeholder {
   color: #ffffff;
 }
@@ -321,7 +325,7 @@ body {
   color: #153416;
 }
 
-.button {
+.button-item {
   margin: 30px 78px 40px 78px;
   font-family: "Roboto-Regular";
   font-weight: 400;
@@ -340,6 +344,13 @@ body {
   color: #ffffff;
 
 }
+
+ .button-item button {
+   border: none; 
+ 
+} 
+
+
 
 
 .accaunt {
